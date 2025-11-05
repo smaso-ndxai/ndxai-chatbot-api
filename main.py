@@ -32,8 +32,8 @@ client = OpenAI(
 
 # Rate limiting simple
 rate_limit_data = defaultdict(list)
-RATE_LIMIT = 15  # màxim 15 peticions
-RATE_WINDOW = timedelta(minutes=1)  # per minut
+RATE_LIMIT = 20  # màxim 15 peticions
+RATE_WINDOW = timedelta(minutes=30)  # per minut
 
 
 class Message(BaseModel):
